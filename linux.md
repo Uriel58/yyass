@@ -207,19 +207,19 @@ mount -a
 reboot
 ```
 
-![image-20221010213835817](../linuxpic/image-20221010213835817.png)
+![image-20221010213835817](./linuxpic/image-20221010213835817.png)
 
-![image-20221010213459651](../linuxpic/image-20221010213459651.png)
+![image-20221010213459651](./linuxpic/image-20221010213459651.png)
 
-![image-20221010213538908](../linuxpic/image-20221010213538908.png)
+![image-20221010213538908](./linuxpic/image-20221010213538908.png)
 
-![image-20221010213607926](../linuxpic/image-20221010213607926.png)
+![image-20221010213607926](./linuxpic/image-20221010213607926.png)
 
-![image-20221010213631985](../linuxpic/image-20221010213631985.png)
+![image-20221010213631985](./linuxpic/image-20221010213631985.png)
 
-![image-20221010213656373](../linuxpic/image-20221010213656373.png)
+![image-20221010213656373](./linuxpic/image-20221010213656373.png)
 
-![image-20221010213713980](../linuxpic/image-20221010213713980.png)
+![image-20221010213713980](./linuxpic/image-20221010213713980.png)
 
 swap 定為記憶體的2倍
 
@@ -306,17 +306,17 @@ user
 user
 ```
 
-![image-20221010211106810](../linuxpic/image-20221010211106810.png)
+![image-20221010211106810](./linuxpic/image-20221010211106810.png)
 
 
 
 # 9/26
 
-![image-20220926134918552](../linuxpic/image-20220926134918552.png)
+![image-20220926134918552](./linuxpic/image-20220926134918552.png)
 
 總量50G，用了多少32.5M，用?%
 
-![image-20220926135207009](../linuxpic/image-20220926135207009.png)
+![image-20220926135207009](./linuxpic/image-20220926135207009.png)
 
 redhat/fedora/centos : rpm/yum   debian/ubuntu: dpkg/apt
 
@@ -354,11 +354,11 @@ dd if=/dev/zero of=test bs=1M count=13  # dev/zero是零裝置，會給出很多
 ll -h # 查看硬體使用量
 ```
 
-![image-20221011104431425](../linuxpic/image-20221011104431425.png)
+![image-20221011104431425](./linuxpic/image-20221011104431425.png)
 
-![image-20221011104441057](../linuxpic/image-20221011104441057.png)
+![image-20221011104441057](./linuxpic/image-20221011104441057.png)
 
-![image-20221011104508098](../linuxpic/image-20221011104508098.png)
+![image-20221011104508098](./linuxpic/image-20221011104508098.png)
 
 ```
 redhat/fedora/centos : rpm/yum   debian/ubuntu: dpkg/apt
@@ -366,7 +366,7 @@ ll -h
 su - user
 ```
 
-![image-20221011104522598](../linuxpic/image-20221011104522598.png)
+![image-20221011104522598](./linuxpic/image-20221011104522598.png)
 
 ```
 dd if=/dev/zero of=test bs=1M count=13
@@ -376,9 +376,9 @@ RPM <- Redhat
 
 RPM ->(use)-> SuSE、Mandriva、TurboLinux....
 
-![image-20221011105338209](../linuxpic/image-20221011105338209.png)
+![image-20221011105338209](./linuxpic/image-20221011105338209.png)
 
-![image-20221011105417123](../linuxpic/image-20221011105417123.png)
+![image-20221011105417123](./linuxpic/image-20221011105417123.png)
 
 ```
 -qa (rpm -qa | grep httpd)////查詢系統已安裝套件清單
@@ -395,7 +395,7 @@ wget https://rpmfind.net/linux/epel/7/x86_64/Packages/j/joe-4.6-4.el7.x86_64.rpm
 rpm -ivh joe-4.6-4.el7.x86_64.rpm
 ```
 
-![image-20221011111407818](../linuxpic/image-20221011111407818.png)
+![image-20221011111407818](./linuxpic/image-20221011111407818.png)
 
 ```
 ---nodeps ///忽略前置相依性檢查，直接安裝
@@ -404,7 +404,7 @@ rpm -Uvh 套件檔案名稱 ////先取得新版檔案，再用它(rpm更新選�
 rpm -e 套件檔案名稱 ///移除套件
 ```
 
-![image-20221011112239578](../linuxpic/image-20221011112239578.png)
+![image-20221011112239578](./linuxpic/image-20221011112239578.png)
 
 ```
 yum install (yum install tcsh)///安裝某套件
@@ -415,7 +415,7 @@ yum list(yum list docker-ce) ////列出套件名稱、版本、本機是否安�
 
 
 
-![image-20220926180623607](../linuxpic/image-20220926180623607.png)
+![image-20220926180623607](./linuxpic/image-20220926180623607.png)
 
 hw2
 
@@ -437,7 +437,7 @@ wget https://src.fedoraproject.org/lookaside/extras/htop/htop-2.2.0.tar.gz/sha51
 
 yum groupinstall "Development Tools"
 
-![image-20220926151956789](../linuxpic/image-20220926151956789.png)
+![image-20220926151956789](./linuxpic/image-20220926151956789.png)
 
 yum install ncurses-devel
 
@@ -457,9 +457,9 @@ https://snapcraft.io/install/ngrok/centos
 
 hw1
 
-![image-20221003145430533](../linuxpic/image-20221003145430533.png)
+![image-20221003145430533](./linuxpic/image-20221003145430533.png)
 
-![image-20221003145442064](../linuxpic/image-20221003145442064.png)
+![image-20221003145442064](./linuxpic/image-20221003145442064.png)
 
 https://dashboard.ngrok.com/get-started/setup
 
@@ -493,11 +493,11 @@ Listen 8080 -> Listen 80(i)
 (./ngrok ssh 22)
 ```
 
-![image-20221011113656588](../linuxpic/image-20221011113656588.png)
+![image-20221011113656588](./linuxpic/image-20221011113656588.png)
 
-![image-20221011113704312](../linuxpic/image-20221011113704312.png)
+![image-20221011113704312](./linuxpic/image-20221011113704312.png)
 
-![image-20221011113713582](../linuxpic/image-20221011113713582.png)
+![image-20221011113713582](./linuxpic/image-20221011113713582.png)
 
 
 
@@ -525,9 +525,9 @@ du -h --max-depth=1 /var
 du -s -h /home
 ```
 
-![image-20221011115313865](../linuxpic/image-20221011115313865.png)
+![image-20221011115313865](./linuxpic/image-20221011115313865.png)
 
-![image-20221011115335660](../linuxpic/image-20221011115335660.png)
+![image-20221011115335660](./linuxpic/image-20221011115335660.png)
 
 
 
@@ -543,7 +543,7 @@ df -h | grep root | awk '{print $5}' | tr "%" " "
 df -h | grep "[/]$" | awk '{print $5}' | tr "%" " "
 ```
 
-![image-20221011115453896](../linuxpic/image-20221011115453896.png)
+![image-20221011115453896](./linuxpic/image-20221011115453896.png)
 
 free ///查看記憶體指令 
 
@@ -553,9 +553,9 @@ free -m -h
 
 ```
 
-![image-20221011115804938](../linuxpic/image-20221011115804938.png)
+![image-20221011115804938](./linuxpic/image-20221011115804938.png)
 
-![image-20221011115822183](../linuxpic/image-20221011115822183.png)
+![image-20221011115822183](./linuxpic/image-20221011115822183.png)
 
 ```
 dd ////複製檔案，指令輸入來源、輸出對象後
@@ -587,21 +587,21 @@ echo "0931-123-456" | tr -d "a-zA-B1-2"
 
 
 
-![image-20221003160837169](../linuxpic/image-20221003160837169.png)
+![image-20221003160837169](./linuxpic/image-20221003160837169.png)
 
-![image-20221003160843594](../linuxpic/image-20221003160843594.png)
+![image-20221003160843594](./linuxpic/image-20221003160843594.png)
 
-![image-20221003160855747](../linuxpic/image-20221003160855747.png)
+![image-20221003160855747](./linuxpic/image-20221003160855747.png)
 
 
 
-![image-20221003160901747](../linuxpic/image-20221003160901747.png)
+![image-20221003160901747](./linuxpic/image-20221003160901747.png)
 
-![image-20221003161047205](../linuxpic/image-20221003161047205.png)
+![image-20221003161047205](./linuxpic/image-20221003161047205.png)
 
-![image-20221003161330263](../linuxpic/image-20221003161330263.png)
+![image-20221003161330263](./linuxpic/image-20221003161330263.png)
 
-![image-20221003161520253](../linuxpic/image-20221003161520253.png)
+![image-20221003161520253](./linuxpic/image-20221003161520253.png)
 
 ```
 echo "0931-123-456" | tr -d "-" 
@@ -610,7 +610,7 @@ echo "0931-123-456" | tr -d "-" | cut -f 1-4
 echo "0931-123-456" | tr -d "-" | cut -c 1-4
 ```
 
-![image-20221011120906483](../linuxpic/image-20221011120906483.png)
+![image-20221011120906483](./linuxpic/image-20221011120906483.png)
 
 # 10/17 
 
@@ -620,11 +620,11 @@ VPN = vitual private network
 
 vpn client <-> vpn client -> pptpd
 
-![image-20221022115838210](../linuxpic/image-20221022115838210.png)
+![image-20221022115838210](./linuxpic/image-20221022115838210.png)
 
-![image-20221022120229724](../linuxpic/image-20221022120229724.png)
+![image-20221022120229724](./linuxpic/image-20221022120229724.png)
 
-![image-20221022124047141](../linuxpic/image-20221022124047141.png)
+![image-20221022124047141](./linuxpic/image-20221022124047141.png)
 
 
 
@@ -673,19 +673,19 @@ ifconfig
 ping 192.168.0.1
 ```
 
-![image-20221022123814579](../linuxpic/image-20221022123814579.png)
+![image-20221022123814579](./linuxpic/image-20221022123814579.png)
 
 
 
-![image-20221022123929295](../linuxpic/image-20221022123929295.png)
+![image-20221022123929295](./linuxpic/image-20221022123929295.png)
 
 
 
-![image-20221022124205674](../linuxpic/image-20221022124205674.png)
+![image-20221022124205674](./linuxpic/image-20221022124205674.png)
 
 
 
-![image-20221017144043829](../linuxpic/image-20221017144043829.png)
+![image-20221017144043829](./linuxpic/image-20221017144043829.png)
 
 
 
@@ -922,9 +922,9 @@ cd ..
 cat b.sh
 ```
 
-![image-20221017153813071](../linuxpic/image-20221017153813071.png)
+![image-20221017153813071](./linuxpic/image-20221017153813071.png)
 
-![image-20221017153824446](../linuxpic/image-20221017153824446.png)
+![image-20221017153824446](./linuxpic/image-20221017153824446.png)
 
 
 
@@ -1011,9 +1011,9 @@ awk '{print $1}' a.log | sort | uniq
 awk '{print $1}' a.log | sort | uniq | wc -l
 ````
 
-![image-20221017160343308](../linuxpic/image-20221017160343308.png)
+![image-20221017160343308](./linuxpic/image-20221017160343308.png)
 
-![image-20221022155458846](../linuxpic/image-20221022155458846.png)
+![image-20221022155458846](./linuxpic/image-20221022155458846.png)
 
 cut - 攝取子字串
 
@@ -1049,19 +1049,19 @@ cut -d "," -f 1,3 doc4 | tr "," "" | sort -n -k 2
 cut -d "," -f 1,3 doc4 | tr "," "" | sort -n -k 2 -r
 ```
 
-![image-20221024134445081](../linuxpic/image-20221024134445081.png)
+![image-20221024134445081](./linuxpic/image-20221024134445081.png)
 
 ```
 cut -d "," -f 1,3 doc4 | tr "," "" | sort -g -k 2 -t ","
 ```
 
-![image-20221024135048300](../linuxpic/image-20221024135048300.png)
+![image-20221024135048300](./linuxpic/image-20221024135048300.png)
 
 ```
 echo "12345678" | cut -c 2-5
 ```
 
-![image-20221024135621558](../linuxpic/image-20221024135621558.png)
+![image-20221024135621558](./linuxpic/image-20221024135621558.png)
 
 split-分割檔案
 
@@ -1080,7 +1080,7 @@ cat 1.txt 2.txt 3.txt > 4.txt
 cat 4.txt
 ```
 
-![image-20221024135710772](../linuxpic/image-20221024135710772.png)
+![image-20221024135710772](./linuxpic/image-20221024135710772.png)
 
 產生固定切割大小
 
@@ -1101,13 +1101,13 @@ ping -c 100 -i 0.2 8.8.8.8///user
 ping -c 100 -i 0.1 8.8.8.8///root
 ```
 
-![image-20221024140356024](../linuxpic/image-20221024140356024.png)
+![image-20221024140356024](./linuxpic/image-20221024140356024.png)
 
-![image-20221025123409422](../linuxpic/image-20221025123409422.png)
+![image-20221025123409422](./linuxpic/image-20221025123409422.png)
 
 traceroute--追蹤網路主機路徑
 
-![image-20221024141506131](../linuxpic/image-20221024141506131.png)
+![image-20221024141506131](./linuxpic/image-20221024141506131.png)
 
 hostname--主機名稱
 
@@ -1136,7 +1136,7 @@ mail -s "test1234" asd741edc@gmail.com < "1234 Hello"
 mail -s "test1234" s119010503@student.nqu.edu.tw < contest
 ```
 
-![image-20221024143845341](../linuxpic/image-20221024143845341.png)
+![image-20221024143845341](./linuxpic/image-20221024143845341.png)
 
 alias--秀出全部有顏色的設定 
 
@@ -1154,11 +1154,11 @@ source .bashrc ////. .bashrc
 alias
 ```
 
-![image-20221024144215096](../linuxpic/image-20221024144215096.png)
+![image-20221024144215096](./linuxpic/image-20221024144215096.png)
 
-![image-20221024144354726](../linuxpic/image-20221024144354726.png)
+![image-20221024144354726](./linuxpic/image-20221024144354726.png)
 
-![image-20221024144442799](../linuxpic/image-20221024144442799.png)
+![image-20221024144442799](./linuxpic/image-20221024144442799.png)
 
 echo--(+output)印出output的指令
 
@@ -1170,7 +1170,7 @@ echo "hi a=$a"
 echo 'hi a=$a'
 ```
 
-![image-20221024145253419](../linuxpic/image-20221024145253419.png)
+![image-20221024145253419](./linuxpic/image-20221024145253419.png)
 
 ```
 aa=50
@@ -1178,7 +1178,7 @@ echo "hi a=${a}a"
 echo "hi a=$aa"
 ```
 
-![image-20221024145544959](../linuxpic/image-20221024145544959.png)
+![image-20221024145544959](./linuxpic/image-20221024145544959.png)
 
 ```
 echo "hello\tworld"
@@ -1188,7 +1188,7 @@ echo -e "hello\'world"
 echo -e "helloworld"
 ```
 
-![image-20221024151216808](../linuxpic/image-20221024151216808.png)
+![image-20221024151216808](./linuxpic/image-20221024151216808.png)
 
 env--環境變數
 
@@ -1215,9 +1215,9 @@ exit
 echo $UID
 ```
 
-![image-20221024151203212](../linuxpic/image-20221024151203212.png)
+![image-20221024151203212](./linuxpic/image-20221024151203212.png)
 
-![image-20221024151658568](../linuxpic/image-20221024151658568.png)
+![image-20221024151658568](./linuxpic/image-20221024151658568.png)
 
 
 
@@ -1239,7 +1239,7 @@ su - user
 ./1.sh
 ```
 
-![image-20221024154157159](../linuxpic/image-20221024154157159.png)
+![image-20221024154157159](./linuxpic/image-20221024154157159.png)
 
 ```
 history
@@ -1261,20 +1261,20 @@ c=$a+$b
 echo $c
 ```
 
-![image-20221024154813653](../linuxpic/image-20221024154813653.png)
+![image-20221024154813653](./linuxpic/image-20221024154813653.png)
 
 ```
 c=`expr $a + $b`
 echo $c
 ```
 
-![image-20221024161929069](../linuxpic/image-20221024161929069.png)
+![image-20221024161929069](./linuxpic/image-20221024161929069.png)
 
-![image-20221024162107965](../linuxpic/image-20221024162107965.png)
+![image-20221024162107965](./linuxpic/image-20221024162107965.png)
 
 
 
-![image-20221024162128997](../linuxpic/image-20221024162128997.png)
+![image-20221024162128997](./linuxpic/image-20221024162128997.png)
 
 read
 
@@ -1285,9 +1285,9 @@ read -p "input a number:"no1
 echo $no1
 ```
 
-![image-20221024155130376](../linuxpic/image-20221024155130376.png)
+![image-20221024155130376](./linuxpic/image-20221024155130376.png)
 
-![image-20221024155314888](../linuxpic/image-20221024155314888.png)
+![image-20221024155314888](./linuxpic/image-20221024155314888.png)
 
 [bash shell 字符串比较](https://www.myfreax.com/how-to-compare-strings-in-bash/)
 
@@ -1303,7 +1303,7 @@ echo $? ///0值為true，其他皆為false
 [ -e file3M ] && echo "l" || echo "0"///1=true0=false
 ```
 
-![image-20221024160000742](../linuxpic/image-20221024160000742.png)
+![image-20221024160000742](./linuxpic/image-20221024160000742.png)
 
 | -d 檔案 | 測試檔案是否為目錄?       |
 | ------- | ------------------------- |
@@ -1324,7 +1324,7 @@ a="123"
 
 
 
-![image-20221024160921852](../linuxpic/image-20221024160921852.png)
+![image-20221024160921852](./linuxpic/image-20221024160921852.png)
 
 ```
 a="abc"
@@ -1334,7 +1334,7 @@ b="abc"
 [ $a = $b ] && echo "equal" || echo "not equal"
 ```
 
-![image-20221024161054054](../linuxpic/image-20221024161054054.png)
+![image-20221024161054054](./linuxpic/image-20221024161054054.png)
 
 ```
 a=5
@@ -1344,15 +1344,15 @@ a=3
 [ $a -ge 5 ] && echo "equal" || echo "not equal"
 ```
 
-![image-20221024161430550](../linuxpic/image-20221024161430550.png)
+![image-20221024161430550](./linuxpic/image-20221024161430550.png)
 
 # 11/7
 
-![image-20221113210926638](../linuxpic/image-20221113210926638.png)
+![image-20221113210926638](./linuxpic/image-20221113210926638.png)
 
 
 
-![image-20221107134914716](../linuxpic/image-20221107134914716.png)
+![image-20221107134914716](./linuxpic/image-20221107134914716.png)
 
 ```
 su
@@ -1363,11 +1363,11 @@ wireshark
 inet1 |inet1 inet2 | inet2///網路設定(分別3虛擬機內部網路
 ```
 
-![image-20221107135459004](../linuxpic/image-20221107135459004.png)
+![image-20221107135459004](./linuxpic/image-20221107135459004.png)
 
-![image-20221107135556254](../linuxpic/image-20221107135556254.png)
+![image-20221107135556254](./linuxpic/image-20221107135556254.png)
 
-![image-20221107135658099](../linuxpic/image-20221107135658099.png)
+![image-20221107135658099](./linuxpic/image-20221107135658099.png)
 
 ```
 su
@@ -1402,7 +1402,7 @@ wireshark
 ///ip route add default via 192.168.1.
 ```
 
-![image-20221107141634758](../linuxpic/image-20221107141634758.png)
+![image-20221107141634758](./linuxpic/image-20221107141634758.png)
 
 
 
@@ -1416,9 +1416,9 @@ MASQUERADE 變裝
 
 #在centos7-3(wireshark)
 
-![image-20221107142120706](../linuxpic/image-20221107142120706.png)
+![image-20221107142120706](./linuxpic/image-20221107142120706.png)
 
-![image-20221107153614965](../linuxpic/image-20221107153614965.png)
+![image-20221107153614965](./linuxpic/image-20221107153614965.png)
 
 -gt
 
@@ -1427,7 +1427,7 @@ MASQUERADE 變裝
 test 2 -gt 3 && echo 1 || echo 0
 ```
 
-![image-20221107153852903](../linuxpic/image-20221107153852903.png)
+![image-20221107153852903](./linuxpic/image-20221107153852903.png)
 
 ```
 a="ABC"
@@ -1438,13 +1438,13 @@ b="Abc"
 [ -z $a ] && echo 1 || echo 0 
 ```
 
-![image-20221107154746344](../linuxpic/image-20221107154746344.png)
+![image-20221107154746344](./linuxpic/image-20221107154746344.png)
 
-![image-20221107154435835](../linuxpic/image-20221107154435835.png)
+![image-20221107154435835](./linuxpic/image-20221107154435835.png)
 
-![image-20221107154447722](../linuxpic/image-20221107154447722.png)
+![image-20221107154447722](./linuxpic/image-20221107154447722.png)
 
-![image-20221113211338756](../linuxpic/image-20221113211338756.png)
+![image-20221113211338756](./linuxpic/image-20221113211338756.png)
 
 ```
 #!/bin/bash
@@ -1461,9 +1461,9 @@ done
 ./a.sh
 ```
 
-![image-20221107154854764](../linuxpic/image-20221107154854764.png)
+![image-20221107154854764](./linuxpic/image-20221107154854764.png)
 
-![image-20221107155602334](../linuxpic/image-20221107155602334.png)
+![image-20221107155602334](./linuxpic/image-20221107155602334.png)
 
 shell ///腳本
 
@@ -1491,13 +1491,13 @@ chmod +x b.sh
 ./b.sh 1 2 3 4 aa bb
 ```
 
-![image-20221107155728971](../linuxpic/image-20221107155728971.png)
+![image-20221107155728971](./linuxpic/image-20221107155728971.png)
 
 ```
 if[ 5 -gt 3 ]; then echo 1; else echo 0; fi 
 ```
 
-![image-20221107160158139](../linuxpic/image-20221107160158139.png)
+![image-20221107160158139](./linuxpic/image-20221107160158139.png)
 
 for
 
@@ -1515,7 +1515,7 @@ chmod +x c.sh
 ./c.sh
 ```
 
-![image-20221107160752631](../linuxpic/image-20221107160752631.png)
+![image-20221107160752631](./linuxpic/image-20221107160752631.png)
 
 ```
 for i in `seq 5`; do echo $i; done
@@ -1523,7 +1523,7 @@ for i in `seq 5`; do echo $i; done
 
 
 
-![image-20221107161046008](../linuxpic/image-20221107161046008.png)
+![image-20221107161046008](./linuxpic/image-20221107161046008.png)
 
 作業
 
@@ -1555,13 +1555,13 @@ chmod +x t.sh
 ls
 ```
 
-![image-20221113214045808](../linuxpic/image-20221113214045808.png)
+![image-20221113214045808](./linuxpic/image-20221113214045808.png)
 
 參考資料:
 
-![image-20221107162354798](../linuxpic/image-20221107162354798.png)
+![image-20221107162354798](./linuxpic/image-20221107162354798.png)
 
-![image-20221113214226948](../linuxpic/image-20221113214226948.png)
+![image-20221113214226948](./linuxpic/image-20221113214226948.png)
 
 # 11/14
 
@@ -1592,7 +1592,7 @@ y
 cat ifcfg-enp0s3
 ```
 
-![image-20221114150220101](../linuxpic/image-20221114150220101.png)
+![image-20221114150220101](./linuxpic/image-20221114150220101.png)
 
 編輯網路卡卡號範例
 
@@ -1644,9 +1644,9 @@ GATEWAY= 192.168.157.2///ip route show === netstat -rn
 #老師沒設dns server
 ```
 
-![image-20221114141054948](../linuxpic/image-20221114141054948.png)
+![image-20221114141054948](./linuxpic/image-20221114141054948.png)
 
-![image-20221114141040773](../linuxpic/image-20221114141040773.png)
+![image-20221114141040773](./linuxpic/image-20221114141040773.png)
 
 我的:(原本)
 
@@ -1691,7 +1691,7 @@ ifconfig
 ping 8.8.8.8
 ```
 
-![image-20221114141102026](../linuxpic/image-20221114141102026.png)
+![image-20221114141102026](./linuxpic/image-20221114141102026.png)
 
 dns server
 
@@ -1704,20 +1704,20 @@ cat /etc/resol.conf
 ping tw.yahoo.com
 ```
 
-![image-20221114141941899](../linuxpic/image-20221114141941899.png)
+![image-20221114141941899](./linuxpic/image-20221114141941899.png)
 
 我的結果
 
-![image-20221114145718365](../linuxpic/image-20221114145718365.png)
+![image-20221114145718365](./linuxpic/image-20221114145718365.png)
 
-![image-20221114145743381](../linuxpic/image-20221114145743381.png)
+![image-20221114145743381](./linuxpic/image-20221114145743381.png)
 
 ```
 ifconfig ens33:10 192.168.157.250 network 255.255.255.0
 ifconfig ens33
 ```
 
-![image-20221114150655378](../linuxpic/image-20221114150655378.png)
+![image-20221114150655378](./linuxpic/image-20221114150655378.png)
 
 ```
 ifconfig ens33 0
@@ -1725,16 +1725,16 @@ ip addr(address) add 192.168.157.250/24 brd + dev enp0s3(ens33)///+brd可支援�
 ip addr show enp0s3(ens33)
 ```
 
-![image-20221114151132664](../linuxpic/image-20221114151132664.png)
+![image-20221114151132664](./linuxpic/image-20221114151132664.png)
 
 ```
 ip addr del 192.168.157.250/24 brd +dev enp0s3(ens33)
 ip addr show enp0s3(ens33)
 ```
 
-![image-20221114151256011](../linuxpic/image-20221114151256011.png)
+![image-20221114151256011](./linuxpic/image-20221114151256011.png)
 
-![image-20221120225845153](../linuxpic/image-20221120225845153.png)
+![image-20221120225845153](./linuxpic/image-20221120225845153.png)
 
 ```
 ifconfig enp0s3(ens33) down
@@ -1750,7 +1750,7 @@ ifconfig enp0s3(ens33) hw ether 00:01:02:03:04:05
 ifconfig enp0s3(ens33)
 ```
 
-![image-20221114152422003](../linuxpic/image-20221114152422003.png)
+![image-20221114152422003](./linuxpic/image-20221114152422003.png)
 
 ```
 man ping
@@ -1760,9 +1760,9 @@ ifconfig enp0s3(ens33)
 wireshark 
 ```
 
-![image-20221114153940420](../linuxpic/image-20221114153940420.png)
+![image-20221114153940420](./linuxpic/image-20221114153940420.png)
 
-![image-20221114154051357](../linuxpic/image-20221114154051357.png)
+![image-20221114154051357](./linuxpic/image-20221114154051357.png)
 
 ```
 ip addr(address) show
@@ -1784,13 +1784,13 @@ In Linux, many ip addresses can be mapped to the same interface card.
 
 In Linux, one IP address can be mapped to many interface cards ?
 
-![image-20221114155441698](../linuxpic/image-20221114155441698.png)
+![image-20221114155441698](./linuxpic/image-20221114155441698.png)
 
 Answer:yes:[network bonding.](https://www.lijyyh.com/2011/11/0-balance-rr-l-round-robin-salve-salve.html)
 
 為了融錯和負載均衡
 
-![image-20221114155623597](../linuxpic/image-20221114155623597.png)
+![image-20221114155623597](./linuxpic/image-20221114155623597.png)
 
 ```
 ip addr(address) del 10.0.0.2/24 dev enp0s3(ens33)
@@ -1809,7 +1809,7 @@ ip -t
 traceroute 8.8.8.8
 ```
 
-![image-20221120230926451](../linuxpic/image-20221120230926451.png)
+![image-20221120230926451](./linuxpic/image-20221120230926451.png)
 
 
 
@@ -1828,7 +1828,7 @@ netstat -tunlp | grep 53 ///dns server
 netstat -tunlp | grep 23
 ```
 
-![image-20221114160818123](../linuxpic/image-20221114160818123.png)
+![image-20221114160818123](./linuxpic/image-20221114160818123.png)
 
 ```
 netstat -an
@@ -1838,9 +1838,9 @@ netstat -tunp | grep ESTABLISHED | wc -l///統計有多少連線裝置
 netstat -tunp | grep 22 | grep ESTABLISHED | wc -l
 ```
 
-![image-20221114161330667](../linuxpic/image-20221114161330667.png)
+![image-20221114161330667](./linuxpic/image-20221114161330667.png)
 
-![image-20221120231130513](../linuxpic/image-20221120231130513.png)
+![image-20221120231130513](./linuxpic/image-20221120231130513.png)
 
 
 
@@ -1865,7 +1865,7 @@ linux server
 - standalone
 - inet
 
-![image-20221121135306300](../linuxpic/image-20221121135306300.png)
+![image-20221121135306300](./linuxpic/image-20221121135306300.png)
 
 
 
@@ -1874,15 +1874,15 @@ pstree
 ps -aux | grep systemd
 ```
 
-![image-20221121140356532](../linuxpic/image-20221121140356532.png)
+![image-20221121140356532](./linuxpic/image-20221121140356532.png)
 
-![image-20221121140418810](../linuxpic/image-20221121140418810.png)
+![image-20221121140418810](./linuxpic/image-20221121140418810.png)
 
 deamon : 背景執行程式
 
-![image-20221121140651448](../linuxpic/image-20221121140651448.png)
+![image-20221121140651448](./linuxpic/image-20221121140651448.png)
 
-![image-20221204202308287](../linuxpic/image-20221204202308287.png)
+![image-20221204202308287](./linuxpic/image-20221204202308287.png)
 
 守護進程
 
@@ -1898,7 +1898,7 @@ kill -l
 cat /usr/lib/systemd/system/httpd.service
 ```
 
-![image-20221121142352664](../linuxpic/image-20221121142352664.png)
+![image-20221121142352664](./linuxpic/image-20221121142352664.png)
 
 ```
 locate sshd.service
@@ -1915,20 +1915,20 @@ man 5 sshd_config
 cat /usr/lib/systemd/system/sshd.service
 ```
 
-![image-20221204203143357](../linuxpic/image-20221204203143357.png)
+![image-20221204203143357](./linuxpic/image-20221204203143357.png)
 
 systemd
 
 - target
 - unit
 
-![image-20221121145205498](../linuxpic/image-20221121145205498.png)
+![image-20221121145205498](./linuxpic/image-20221121145205498.png)
 
-![image-20221121145541015](../linuxpic/image-20221121145541015.png)
+![image-20221121145541015](./linuxpic/image-20221121145541015.png)
 
-![image-20221121145759939](../linuxpic/image-20221121145759939.png)
+![image-20221121145759939](./linuxpic/image-20221121145759939.png)
 
-![image-20221204203408951](../linuxpic/image-20221204203408951.png)
+![image-20221204203408951](./linuxpic/image-20221204203408951.png)
 
 ```
 systemctl isolate multi-user.target ///單人模式(文字)
@@ -1937,9 +1937,9 @@ systemctl isolate graphical.target///圖形化介面模式
 補完
 ```
 
-![image-20221121151206077](../linuxpic/image-20221121151206077.png)
+![image-20221121151206077](./linuxpic/image-20221121151206077.png)
 
-![image-20221121150606876](../linuxpic/image-20221121150606876.png)
+![image-20221121150606876](./linuxpic/image-20221121150606876.png)
 
 [linux systemd](https://blog.gtwang.org/linux/linux-create-systemd-service-unit-for-python-echo-server-tutorial-examples/)
 
@@ -2005,11 +2005,11 @@ systemctl status echo_server
 (systemctl status echo_server)
 ```
 
-![image-20221121160351424](../linuxpic/image-20221121160351424.png)
+![image-20221121160351424](./linuxpic/image-20221121160351424.png)
 
-![image-20221121154606993](../linuxpic/image-20221121154606993.png)
+![image-20221121154606993](./linuxpic/image-20221121154606993.png)
 
-![image-20221121154754817](../linuxpic/image-20221121154754817.png)
+![image-20221121154754817](./linuxpic/image-20221121154754817.png)
 
 [linux telnet](https://blog.csdn.net/l_liangkk/article/details/105401435)
 
@@ -2028,7 +2028,7 @@ systemctl enable telnet.socket
 telnet 192.168.x.x
 ```
 
-![image-20221121162033796](../linuxpic/image-20221121162033796.png)
+![image-20221121162033796](./linuxpic/image-20221121162033796.png)
 
 # 11/28
 
@@ -2115,27 +2115,27 @@ if($result->num_rows >0){
 http://192.168.56.108/index.php
 ```
 
-![image-20221128134606535](../linuxpic/image-20221128134606535.png)
+![image-20221128134606535](./linuxpic/image-20221128134606535.png)
 
-![image-20221128134818299](../linuxpic/image-20221128134818299.png)
+![image-20221128134818299](./linuxpic/image-20221128134818299.png)
 
-![image-20221128140015577](../linuxpic/image-20221128140015577.png)
+![image-20221128140015577](./linuxpic/image-20221128140015577.png)
 
-![image-20221128140604751](../linuxpic/image-20221128140604751.png)
+![image-20221128140604751](./linuxpic/image-20221128140604751.png)
 
-![image-20221128140616387](../linuxpic/image-20221128140616387.png)
+![image-20221128140616387](./linuxpic/image-20221128140616387.png)
 
-![image-20221128141836395](../linuxpic/image-20221128141836395.png)
+![image-20221128141836395](./linuxpic/image-20221128141836395.png)
 
-![image-20221128142405049](../linuxpic/image-20221128142405049.png)
+![image-20221128142405049](./linuxpic/image-20221128142405049.png)
 
-![image-20221128143431620](../linuxpic/image-20221128143431620.png)
+![image-20221128143431620](./linuxpic/image-20221128143431620.png)
 
-![image-20221128145900304](../linuxpic/image-20221128145900304.png)
+![image-20221128145900304](./linuxpic/image-20221128145900304.png)
 
-![image-20221128155517370](../linuxpic/image-20221128155517370.png)
+![image-20221128155517370](./linuxpic/image-20221128155517370.png)
 
-![image-20221128155447383](../linuxpic/image-20221128155447383.png)
+![image-20221128155447383](./linuxpic/image-20221128155447383.png)
 
 [db Table 的新增、修改、刪除](https://clay-atlas.com/blog/2019/11/21/sql-table-create-insert-update-remove-delete/)
 
@@ -2170,7 +2170,7 @@ https->s:certificate
 
 在學校只能用https，不能用http
 
-![image-20221128160412955](../linuxpic/image-20221128160412955.png)
+![image-20221128160412955](./linuxpic/image-20221128160412955.png)
 
 ```
 netstat -tunlp | grep 8888///得知是否有被用(httpd.conf)
@@ -2178,7 +2178,7 @@ systemctl restart httpd
 systemctl enable httpd
 ```
 
-![image-20221128161226427](../linuxpic/image-20221128161226427.png)
+![image-20221128161226427](./linuxpic/image-20221128161226427.png)
 
 ```
 ps -aux | grep httpd
@@ -2187,9 +2187,9 @@ pkill -9 -s 18085
 ps -ajx | grep httpd
 ```
 
-![image-20221128162126177](../linuxpic/image-20221128162126177.png)
+![image-20221128162126177](./linuxpic/image-20221128162126177.png)
 
-![image-20221128162308400](../linuxpic/image-20221128162308400.png)
+![image-20221128162308400](./linuxpic/image-20221128162308400.png)
 
 # 12/5
 
@@ -2216,7 +2216,7 @@ cd /etc/httpd
 cd /var/log/httpd/
 ```
 
-![image-20221205135415646](../linuxpic/image-20221205135415646.png)
+![image-20221205135415646](./linuxpic/image-20221205135415646.png)
 
 
 
@@ -2233,11 +2233,11 @@ ls
 
 如下是可以，需要virtualhost的技術，一台主機需要架2個相同ip、port等網站，需要第4層應用層位址，來區分2個網站，甚至更多
 
-![image-20221205140453921](../linuxpic/image-20221205140453921.png)
+![image-20221205140453921](./linuxpic/image-20221205140453921.png)
 
 IS 、apache
 
-![image-20221205141651208](../linuxpic/image-20221205141651208.png)
+![image-20221205141651208](./linuxpic/image-20221205141651208.png)
 
 
 
@@ -2251,7 +2251,7 @@ systemctl restart httpd
 tail -f /var/log/httpd/access_log
 ```
 
-![image-20221205143446655](../linuxpic/image-20221205143446655.png)
+![image-20221205143446655](./linuxpic/image-20221205143446655.png)
 
 ```
 tail -f /var/log/httpd/access_log | awk '{print $1}'
@@ -2260,16 +2260,16 @@ tail -f /var/log/httpd/access_log | awk '{print $1}' | sort | unit
 tail -f /var/log/httpd/access_log | awk '{print $1}' | sort | unit |wc -ls
 ```
 
-![image-20221205144252739](../linuxpic/image-20221205144252739.png)
+![image-20221205144252739](./linuxpic/image-20221205144252739.png)
 
 ```
 tail -f /var/log/httpd/error_log
 
 ```
 
-![image-20221209224027498](../linuxpic/image-20221209224027498.png)
+![image-20221209224027498](./linuxpic/image-20221209224027498.png)
 
-![image-20221205144636881](../linuxpic/image-20221205144636881.png)
+![image-20221205144636881](./linuxpic/image-20221205144636881.png)
 
 ```
 (less /var/log/httpd/access_log)
@@ -2281,37 +2281,37 @@ cat /run/httpd.pid
 netstat -tunlp |grep 80
 ```
 
-![image-20221205144841979](../linuxpic/image-20221205144841979.png)
+![image-20221205144841979](./linuxpic/image-20221205144841979.png)
 
-![image-20221205144907227](../linuxpic/image-20221205144907227.png)
+![image-20221205144907227](./linuxpic/image-20221205144907227.png)
 
-![image-20221205145059319](../linuxpic/image-20221205145059319.png)
+![image-20221205145059319](./linuxpic/image-20221205145059319.png)
 
 我的:
 
-![image-20221205145909875](../linuxpic/image-20221205145909875.png)
+![image-20221205145909875](./linuxpic/image-20221205145909875.png)
 
 
 
 
 
-![image-20221205145952608](../linuxpic/image-20221205145952608.png)
+![image-20221205145952608](./linuxpic/image-20221205145952608.png)
 
-![image-20221205150002376](../linuxpic/image-20221205150002376.png)
+![image-20221205150002376](./linuxpic/image-20221205150002376.png)
 
 ```
 ps -aux | grep httpd
 ```
 
-![image-20221205150113182](../linuxpic/image-20221205150113182.png)
+![image-20221205150113182](./linuxpic/image-20221205150113182.png)
 
-![image-20221205150331342](../linuxpic/image-20221205150331342.png)
+![image-20221205150331342](./linuxpic/image-20221205150331342.png)
 
-![image-20221205150250015](../linuxpic/image-20221205150250015.png)
+![image-20221205150250015](./linuxpic/image-20221205150250015.png)
 
-![image-20221205150339371](../linuxpic/image-20221205150339371.png)
+![image-20221205150339371](./linuxpic/image-20221205150339371.png)
 
-![image-20221205150425984](../linuxpic/image-20221205150425984.png)
+![image-20221205150425984](./linuxpic/image-20221205150425984.png)
 
 ```
 cd /etc/httpd/
@@ -2321,7 +2321,7 @@ ls
 gedit userdir.conf
 ```
 
-![image-20221205150533992](../linuxpic/image-20221205150533992.png)
+![image-20221205150533992](./linuxpic/image-20221205150533992.png)
 
 ```
 systemctl restart httpd
@@ -2335,11 +2335,11 @@ ip/~user/hi.htm(192.168.56.108/~user/hi.htm)
 chmod 755 user # 讓他人可以讀取
 ```
 
-![image-20221205150908005](../linuxpic/image-20221205150908005.png)
+![image-20221205150908005](./linuxpic/image-20221205150908005.png)
 
-![image-20221205150925352](../linuxpic/image-20221205150925352.png)
+![image-20221205150925352](./linuxpic/image-20221205150925352.png)
 
-![image-20221205155809455](../linuxpic/image-20221205155809455.png)
+![image-20221205155809455](./linuxpic/image-20221205155809455.png)
 
 ```
 補
@@ -2350,17 +2350,17 @@ ll
 ip/myata/1.htm
 ```
 
-![image-20221205160314885](../linuxpic/image-20221205160314885.png)
+![image-20221205160314885](./linuxpic/image-20221205160314885.png)
 
 way1:
 
-![image-20221205160615284](../linuxpic/image-20221205160615284.png)
+![image-20221205160615284](./linuxpic/image-20221205160615284.png)
 
-![image-20221205160644712](../linuxpic/image-20221205160644712.png)
+![image-20221205160644712](./linuxpic/image-20221205160644712.png)
 
 way2:
 
-![image-20221205160746203](../linuxpic/image-20221205160746203.png)
+![image-20221205160746203](./linuxpic/image-20221205160746203.png)
 
 
 
@@ -2377,13 +2377,13 @@ systemctl restart httpd
 192.168.56.108/mydata2/2.htm
 ```
 
-![image-20221205161322213](../linuxpic/image-20221205161322213.png)
+![image-20221205161322213](./linuxpic/image-20221205161322213.png)
 
-![image-20221205161334744](../linuxpic/image-20221205161334744.png)
+![image-20221205161334744](./linuxpic/image-20221205161334744.png)
 
  我的:
 
-![image-20221205163355391](../linuxpic/image-20221205163355391.png)
+![image-20221205163355391](./linuxpic/image-20221205163355391.png)
 
 # 12/12
 
@@ -2449,37 +2449,37 @@ systemctl status httpd
 192.168.56.108        www.b.com
 ```
 
-![image-20221212135632821](../linuxpic/image-20221212135632821.png)
+![image-20221212135632821](./linuxpic/image-20221212135632821.png)
 
-![image-20221212135640489](../linuxpic/image-20221212135640489.png)
+![image-20221212135640489](./linuxpic/image-20221212135640489.png)
 
-![image-20221212135827114](../linuxpic/image-20221212135827114.png)
+![image-20221212135827114](./linuxpic/image-20221212135827114.png)
 
-![image-20221212135837250](../linuxpic/image-20221212135837250.png)
+![image-20221212135837250](./linuxpic/image-20221212135837250.png)
 
 我的:
 
-![image-20221212142645884](../linuxpic/image-20221212142645884.png)
+![image-20221212142645884](./linuxpic/image-20221212142645884.png)
 
-![image-20221212142833307](../linuxpic/image-20221212142833307.png)
+![image-20221212142833307](./linuxpic/image-20221212142833307.png)
 
 
 
-![image-20221212144342948](../linuxpic/image-20221212144342948.png)
+![image-20221212144342948](./linuxpic/image-20221212144342948.png)
 
 ```
 cat /etc/httpd
 ```
 
-![image-20221212145302527](../linuxpic/image-20221212145302527.png)
+![image-20221212145302527](./linuxpic/image-20221212145302527.png)
 
 
 
-![image-20221212145311636](../linuxpic/image-20221212145311636.png)
+![image-20221212145311636](./linuxpic/image-20221212145311636.png)
 
-![image-20221212145629734](../linuxpic/image-20221212145629734.png)
+![image-20221212145629734](./linuxpic/image-20221212145629734.png)
 
-![image-20221212145946843](../linuxpic/image-20221212145946843.png)
+![image-20221212145946843](./linuxpic/image-20221212145946843.png)
 
 ```\
 cd /var/www/a.com
@@ -2519,15 +2519,15 @@ systemctl status httpd
 
 
 
-![image-20221212151133315](../linuxpic/image-20221212151133315.png)
+![image-20221212151133315](./linuxpic/image-20221212151133315.png)
 
-![image-20221212151138122](../linuxpic/image-20221212151138122.png)
+![image-20221212151138122](./linuxpic/image-20221212151138122.png)
 
 我的:
 
-![image-20221212220956995](../linuxpic/image-20221212220956995.png)
+![image-20221212220956995](./linuxpic/image-20221212220956995.png)
 
-![image-20221212221009727](../linuxpic/image-20221212221009727.png)
+![image-20221212221009727](./linuxpic/image-20221212221009727.png)
 
 下周可能考試的內容:
 
@@ -2559,13 +2559,13 @@ systemctl restart vsftpd
 #使用winSCP做連線，anonymous login
 ```
 
-![image-20221212155117448](../linuxpic/image-20221212155117448.png)
+![image-20221212155117448](./linuxpic/image-20221212155117448.png)
 
 https://blog.csdn.net/zhaojia92/article/details/79511581
 
-![image-20221212160535985](../linuxpic/image-20221212160535985.png)
+![image-20221212160535985](./linuxpic/image-20221212160535985.png)
 
 我的:
 
-![image-20221212221840007](../linuxpic/image-20221212221840007.png)
+![image-20221212221840007](./linuxpic/image-20221212221840007.png)
 
