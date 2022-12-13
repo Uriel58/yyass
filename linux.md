@@ -2463,13 +2463,94 @@ systemctl status httpd
 
 ![image-20221212142833307](./linuxpic/image-20221212142833307.png)
 
+![image-20221213103948712](./linuxpic/image-20221213103948712.png)
 
+![image-20221213104030930](./linuxpic/image-20221213104030930.png)
 
-![image-20221212144342948](./linuxpic/image-20221212144342948.png)
+![image-20221213104118353](./linuxpic/image-20221213104118353.png)
+
+![image-20221213104138280](./linuxpic/image-20221213104138280.png)
+
+![image-20221213104201858](./linuxpic/image-20221213104201858.png)
 
 ```
-cat /etc/httpd
+cd /etc/httpd/conf
+ls
+gedit httpd.conf &
 ```
+
+![image-20221213104416621](./linuxpic/image-20221213104416621.png)
+
+```
+cd /var/www/a.com
+ls
+rm indedx.html
+y
+touch {a...d}.txt
+ls
+cd /etc/httpd/conf.d
+ls
+gedit a.com.conf
+<VirtualHost *:80>
+    ServerName a.com
+    ServerAlias www.a.com
+    ServerAdmin webmaster@a.com
+    DocumentRoot /var/www/a.com
+
+    <Directory /var/www/a.com>
+    	Options Indexes
+        #Options -Indexes +FollowSymLinks
+        AllowOverride All
+    </Directory>
+
+    ErrorLog /var/log/httpd/a.com-error.log
+    CustomLog /var/log/httpd/a.com-access.log combined
+</VirtualHost>
+#save
+systemctl restart httpd
+cd /var/www/a.com
+mkdir a
+cd a
+touch {a...d}.txt
+ls
+cd ..
+ls
+rm *.txt -rf
+ls
+cd a
+pwd
+systemctl restart httpd
+cd
+cd /
+mkdir mytmp
+echo "hi" > hi.txt
+pwd
+cd /var/www/a.com/a
+ls
+man ln
+ln -s /mytmp mytmp
+ll
+systemctl restart httpd
+gedit a.com.conf
+<VirtualHost *:80>
+    ServerName a.com
+    ServerAlias www.a.com
+    ServerAdmin webmaster@a.com
+    DocumentRoot /var/www/a.com
+
+    <Directory /var/www/a.com>
+    	Options Indexes FollowSymLinks
+        #Options -Indexes +FollowSymLinks
+        AllowOverride All
+    </Directory>
+
+    ErrorLog /var/log/httpd/a.com-error.log
+    CustomLog /var/log/httpd/a.com-access.log combined
+</VirtualHost>
+systemctl restart httpd
+```
+
+
 
 ![image-20221212145302527](./linuxpic/image-20221212145302527.png)
 
@@ -2480,6 +2561,62 @@ cat /etc/httpd
 ![image-20221212145629734](./linuxpic/image-20221212145629734.png)
 
 ![image-20221212145946843](./linuxpic/image-20221212145946843.png)
+
+![image-20221213110029032](./linuxpic/image-20221213110029032.png)
+
+![image-20221213110034963](./linuxpic/image-20221213110034963.png)
+
+![image-20221213110056280](./linuxpic/image-20221213110056280.png)
+
+```
+cd /var/www/a.com
+mkdir secure/
+echo "important data" > data.txt
+ls
+cd /etc/httpd/conf.d
+gedit a.com.conf
+<VirtualHost *:80>
+    ServerName a.com
+    ServerAlias www.a.com
+    ServerAdmin webmaster@a.com
+    DocumentRoot /var/www/a.com
+
+    <Directory /var/www/a.com>
+        Options Indexes FollowSymLinks
+        AllowOverride All
+    </Directory>
+<Directory /var/www/a.com/secure>
+ AllowOverride AuthConfig
+</Directory>
+    ErrorLog /var/log/httpd/a.com-error.log
+    CustomLog /var/log/httpd/a.com-access.log combined
+</VirtualHost>
+cd /var/www/a.com/secure/
+ls
+htpasswd -c .htpasswd tom
+#第一次設才需要 -c
+tom
+cat .htpasswd
+htpasswd .htpasswd marry
+marry
+cat .htpasswd
+gedit .htaccess
+AuthType Basic
+AuthName "Private File Area"
+AuthUserFile /var/www/a.com/secure/.htpasswd
+Require valid-user
+systemctl restart httpd
+ls -al
+
+```
+
+![image-20221212151133315](./linuxpic/image-20221212151133315.png)
+
+![image-20221213111313363](./linuxpic/image-20221213111313363.png)
+
+
+
+hw2:
 
 ```\
 cd /var/www/a.com
@@ -2496,6 +2633,7 @@ AuthUserFile /var/www/a.com/secure/.htpasswd
 Require valid-user
 cd /etc/httpd/conf.d
 gedit a.com.conf
+(ls -a)
 <VirtualHost *:80>
     ServerName a.com
     ServerAlias www.a.com
@@ -2519,10 +2657,6 @@ systemctl status httpd
 
 
 
-![image-20221212151133315](./linuxpic/image-20221212151133315.png)
-
-![image-20221212151138122](./linuxpic/image-20221212151138122.png)
-
 我的:
 
 ![image-20221212220956995](./linuxpic/image-20221212220956995.png)
@@ -2531,13 +2665,71 @@ systemctl status httpd
 
 下周可能考試的內容:
 
-1.安裝
+1.安裝iso
 
-2.network setting
+2.network setting(network)
 
-3.ssh
+3.ssh(no passwd)
 
-...
+4.sftp
+
+
+
+```
+rpm -qa | grep vsftpd
+yum install vsftpd
+cd /var/ftp
+ls
+cd pub
+ls
+echo 1 > 1.txt
+echo 2 > 2.txt
+ifconfig
+#open winscp
+netstat -tunlp | grep 21
+systemctl start vsftpd
+systemctl status vsftpd
+ll
+cd ..
+ll
+chmod 777 pub
+ll
+cd ..
+ll
+chmod 777 ftp
+cd /etc/vsftp
+ls
+gedit vsftp.conf ////annoymous
+systemctl restart vsftpd
+gedit /etc/vsftpd/vsftpd.conf
+anonymous_enable=YES
+anon_upload_enable=YES
+anon_mkdir_write_enable=YES
+#加入權限
+anon_other_write_enable=YES
+anon_world_readable_only=NO
+anon_root=/var/ftp  
+anon_other_write_enable=YES
+anon_world_readable_only=NO
+anon_root=/var/ftp
+systemctl restart vsftpd
+```
+
+![image-20221213111940057](./linuxpic/image-20221213111940057.png)
+
+![image-20221213112152984](./linuxpic/image-20221213112152984.png)
+
+![image-20221213112407293](./linuxpic/image-20221213112407293.png)
+
+[開ftp權限](https://blog.csdn.net/zhaojia92/article/details/79511581)
+
+![image-20221212155117448](./linuxpic/image-20221212155117448.png)
+
+![image-20221212160535985](./linuxpic/image-20221212160535985.png)
+
+![image-20221213111506564](./linuxpic/image-20221213111506564.png)
+
+hw3:
 
 ```
 yum install vsftpd
@@ -2559,13 +2751,8 @@ systemctl restart vsftpd
 #使用winSCP做連線，anonymous login
 ```
 
-![image-20221212155117448](./linuxpic/image-20221212155117448.png)
 
-https://blog.csdn.net/zhaojia92/article/details/79511581
-
-![image-20221212160535985](./linuxpic/image-20221212160535985.png)
 
 我的:
 
 ![image-20221212221840007](./linuxpic/image-20221212221840007.png)
-
