@@ -1402,6 +1402,17 @@ wireshark
 ///ip route add default via 192.168.1.
 ```
 
+[**connect：network is unreachable**](https://blog.csdn.net/weixin_44009447/article/details/120034467)
+
+```
+可用yum install httpd後找到
+ip addr
+cd /etc/sysconfig/network-scripts
+vi ifcfg-eno16777736
+ONBOOT=yes
+service network restart
+```
+
 ![image-20221107141634758](./linuxpic/image-20221107141634758.png)
 
 
@@ -2607,7 +2618,6 @@ AuthUserFile /var/www/a.com/secure/.htpasswd
 Require valid-user
 systemctl restart httpd
 ls -al
-
 ```
 
 ![image-20221212151133315](./linuxpic/image-20221212151133315.png)
