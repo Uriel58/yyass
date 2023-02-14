@@ -20,6 +20,8 @@
 12. NAT
 13. DHCP
 
+![螢幕擷取畫面 2022-09-19 160443.png](./linuxpic/螢幕擷取畫面 2022-09-19 160443.png)
+
 enps03: NAT網路卡(連internet
 
 enps08: host-only network(跟另一台機器連結)
